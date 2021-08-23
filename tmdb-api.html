@@ -58,7 +58,7 @@ input[type=text]{
       <a class="navbar-brand" href="#">DIGITAL PREMIERES</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="#">Home</a></li>
       <li><a href="#">Movies</a></li>
       <li><a href="#">TV Shows</a></li>
     </ul>
@@ -209,7 +209,7 @@ function showMovies(data) {
        movieEl.classList.add('movie');
         movieEl.innerHTML = `             
     <div class="container col-sm-3 col-md-4 col-lg-3">
-        <img class="w3-image img-rounded" src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}">
+        <img class="img-responsive img-rounded" src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580" }" alt="${title}">
         <p>
         
         </p>
