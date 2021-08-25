@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -185,6 +186,7 @@
     <main id="main"> 
     
     </main>
+    
 <!-- / Section Main -->    
 
 <!-- Pagination 
@@ -303,6 +305,8 @@
 
         })
     }
+    
+  
 
     // Show Movies
     function showMovies(data) {
@@ -314,7 +318,7 @@
            movieEl.classList.add('movie');
             movieEl.innerHTML = `    
             
-        <div class="container col-sm-3 col-md-4 col-lg-3">
+        <div class="container col-sm-3 col-md-3 col-lg-2">
             <img class="img-responsive img-rounded"  src="${poster_path? IMG_URL + poster_path: "http://via.placeholder.com/1080x1580"  }" alt="${title} style="width:100%;"">
             <p>
             
@@ -324,7 +328,7 @@
             main.appendChild(movieEl);
         })
     }
-
+    
 
     // Vote Rating Color
     function getColor(vote) {
@@ -387,7 +391,6 @@
 
       }
 	}
-
 
 </script>
 
